@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+  }
+    
+body {
+    width: 100%;
+    padding-top: 0px;
+    margin:0px;
+    background-color: #345834;
+    font-family: sans-serif;
+}
+
+/* General elements default style */
+ul{
+    margin:0px;
+    list-style: none;
+}
+
+li button:hover{
+    color:#191919;
+}
+
+ul li button{
+    float:left;
+    display: block;
+    color: #767676;
+    background-color: white;
+    border-width: 0px;
+    text-align: center;
+    padding: 14px 23px;
+    text-decoration: none;
+}
+
+/* Style the top navigation bar */
+nav {
+    width:100%;
+    overflow: hidden;
+    padding-top: 15px;
+    border-bottom: 1px solid #D9D9D9;
+    background-color: white;
+}
+
+.content_area{
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+.content{
+    width: 80%;
+    margin: 100px auto;
+}

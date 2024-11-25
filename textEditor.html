@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="./static/css/textEditor.css">
+  </head>
+  <body>
+    <form id="novelForm" action="submit.php" method="POST">
+      <input id="titleEditor" name="title" type="text" placeholder=" Here goes the Title"></textarea>
+      <textarea id="editor" name="content"></textarea>
+      <div class='submitButton'><button type="submit" id="submit" onClick="loadPage('../../resultPage.html',[])"> ▶ Match BGM</button></div>
+    </form>
+
+    <div id="display_area">
+
+    </div>
+    <script src="./static/script/textEditor.js"></script>
+    <script src="./static/script/loadPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./static/css/index.css">
+        <title>SongForNovel:Home</title>
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navbar">
+                <ul class="category">
+                    <li><button id="homeButton" onClick="loadPage('../../home.html',[])">HOME</button></li>
+                    <li><button id="writeButton" onClick="loadPage('../../textEditor.html',['./static/script/textEditor.js'])">WRITE</button></li>
+                    <li><button id="novelsButton" onClick="loadPage('../../novelList.html',[])">NOVELS</button></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="content_area">
+            <div class="content" id="content">
+                
+            </div>
+        </main>
+        <script src="./static/script/loadPage.js"></script>
+        <script src="./static/script/index.js"></script>
+    </body>
+</html>

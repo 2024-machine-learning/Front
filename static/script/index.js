@@ -1,0 +1,1 @@
+loadPage("../../home.html",[]);

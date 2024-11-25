@@ -1,0 +1,36 @@
+form{
+    overflow: hidden;
+}
+#titleEditor{
+    width:100%;
+    height: 60px;
+    vertical-align: bottom;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32pt;
+    border: none;
+    padding: 10px;
+}
+
+#titleEditor:focus {
+    outline: none;
+}
+
+#submit{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 24pt;
+    margin:50px auto;
+    border: none;
+}
+
+#submit:hover{
+    color: #D9D9D9;
+    text-decoration: underline;
+}
+.submitButton{
+    width: max-content;
+    margin:0px auto;
+}
+.tox-tinymce {
+    border-radius: 0px !important; /* iframe 테두리 제거 */
+}
