@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <link rel="stylesheet" href="./static/css/novelList.css">
-    </head>
-    <body>
-        <h1>Novels</h1>
-        <ul id="titlelist">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Web Player</title>
+</head>
+<body>
+  <h1>Spotify Web Player</h1>
+  <div id="status">Initializing player...</div>
 
-        </ul>
-    </body>
+  <input type="text" id="trackName" placeholder="Track Name" />
+  <input type="text" id="artistName" placeholder="Artist Name" />
+  <button id="searchAndPlay">Search & Play</button>
+
+  <p id="Title">Title: </p>
+  <p id="Artist">Artist: </p>
+  <img id="AlbumArt"src="" width="640px" height="640px"></img>
+
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  <script src="./apiScript.js"></script>
+</body>
 </html>
