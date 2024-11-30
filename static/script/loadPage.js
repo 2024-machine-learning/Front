@@ -1,4 +1,4 @@
-function loadPage(url,scriptUrls=[]){
+function loadPage(url,scriptUrls=[],callback){
     fetch(url)
         .then(response => {
             if(!response.ok){
@@ -7,7 +7,6 @@ function loadPage(url,scriptUrls=[]){
             return response.text();
         })
         .then(html => {
-            console.log(html);
             const contentDiv = document.getElementById('content');
             contentDiv.innerHTML = html;
 
@@ -25,6 +24,8 @@ function loadPage(url,scriptUrls=[]){
                 executeScript(script);
                 script.remove(); // 처리 후 제거
             });
+
+            if(callback) callback();
         })
         .catch(error => {
             console.error('Error loading page: ',error);

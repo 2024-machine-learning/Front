@@ -10,7 +10,7 @@
                 <h1 id="titleText">TitleArea</h1>
                 <hr id="titleUnderline">
             </div>
-            <div class="contentTxtArea">
+            <div class="contentTxtArea" id="novelContent">
                 <pre>
 Text Area: Content of the Article
 This is Where the content of the artcle is shown. This is Where the content of the artcle is shown. 
@@ -21,18 +21,26 @@ This is Where the content of the artcle is shown. This is Where the content of t
                 </pre>
             </div>
         </div>
-        <div class="songList"></div>
-        <div class="musicPlayer">
+        <div class="songList">
+        </div>
+        <div class="musicPlayer" id="albumArt">
             <div class="spotifyAPI">
-                <div id="player">
-                    <button id="play">Play</button>
-                    <button id="pause">Pause</button>
-                    <div id="track">Track Name</div>
-                </div>
+                <h1>Spotify Web Player</h1>
+                <div id="status">Initializing player...</div>
+
+                <input type="text" id="trackName" placeholder="Track Name" />
+                <input type="text" id="artistName" placeholder="Artist Name" />
+                <button id="searchAndPlay">Search & Play</button>
+
+                <p id="Title">Title: </p>
+                <p id="Artist">Artist: </p>
+                <img id="AlbumArt"src="" width="640px" height="640px"></img>
+
+                <script src="https://sdk.scdn.co/spotify-player.js"></script>
+                <script src="./apiScript.js"></script>
             </div>
         </div>
-        <script src="./static/script/resultPage.js"></script>
         <script src="https://sdk.scdn.co/spotify-player.js"></script>
-        <script src="./static/script/spotifyAPI.js"></script>
+
     </body>
 </html>

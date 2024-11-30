@@ -4,7 +4,7 @@ form.addEventListener('submit', (event) => {
     event.preventDefault(); // 디버그용으로 기본 동작 차단 (테스트 시 제거 가능)
     tinymce.triggerSave();  // TinyMCE의 내용을 textarea로 동기화
     const formData = new FormData(form); // 폼 데이터를 가져옴
-    document.getElementById('display_area').innerHTML = formData.get('title')+"<br>"+formData.get('content');
+    postData(formData.get('title'),formData.get('content'));
 
     // 실제 서버로 폼 데이터 전송 시:
     // form.submit();

@@ -1,4 +1,4 @@
-const clientID = 'YOUR_CLIENT_ID'; // Replace with your Spotify Client ID
+const clientID = '1e936a3fe625405d88c5b7537637b97d'; // Replace with your Spotify Client ID
 const redirectURI = 'http://localhost:5500'; // Replace with your redirect URI
 const scopes = [
   'streaming',
