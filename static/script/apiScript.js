@@ -84,7 +84,8 @@ function searchTrack(trackName, artistName) {
       if (data.tracks.items.length > 0) {
         document.getElementById('Title').innerHTML = 'Title: '+data.tracks.items[0].name;
         document.getElementById('Artist').innerHTML = 'Artist: '+data.tracks.items[0].artists[0].name;
-        document.getElementById('AlbumArt').setAttribute('src',data.tracks.items[0].album.images[0].url)
+        var albumimg = data.tracks.items[0].album.images[0].url;
+        document.getElementById('AlbumArt').setAttribute('style',`background-image:linear-gradient(to right, #000000e6,#00000000),url(${albumimg})`);
         return data.tracks.items[0].id;
       } else {
         throw new Error('Track not found');
